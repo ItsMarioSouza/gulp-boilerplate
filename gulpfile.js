@@ -95,9 +95,10 @@ gulp.task('clean:dist', function() {
 
 // Gulp Watch
 gulp.task('watch', function(callback) {
-  runSequence(['sass', 'browserSync'], 'watchers',
-    callback
-  )
+	runSequence(['sass', 'browserSync'],
+		'watchers',
+		callback
+	)
 })
 
 
